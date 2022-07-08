@@ -1,0 +1,121 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.0": 50,
+      "vusers.created": 50,
+      "http.requests": 79,
+      "http.codes.200": 29,
+      "http.responses": 29,
+      "errors.ECONNRESET": 50,
+      "vusers.failed": 50
+    },
+    "rates": {
+      "http.request_rate": 9
+    },
+    "firstCounterAt": 1657246399522,
+    "firstHistogramAt": 1657246402861,
+    "lastCounterAt": 1657246405517,
+    "lastHistogramAt": 1657246405408,
+    "firstMetricAt": 1657246399522,
+    "lastMetricAt": 1657246405517,
+    "period": 1657246400000,
+    "summaries": {
+      "http.response_time": {
+        "min": 3283,
+        "max": 5545,
+        "count": 29,
+        "p50": 4867,
+        "median": 4867,
+        "p75": 5272.4,
+        "p90": 5378.9,
+        "p95": 5487.5,
+        "p99": 5487.5,
+        "p999": 5487.5
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 3283,
+        "max": 5545,
+        "count": 29,
+        "p50": 4867,
+        "median": 4867,
+        "p75": 5272.4,
+        "p90": 5378.9,
+        "p95": 5487.5,
+        "p99": 5487.5,
+        "p999": 5487.5
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.0": 25,
+        "vusers.created": 25,
+        "http.requests": 24
+      },
+      "rates": {
+        "http.request_rate": 24
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1657246399522,
+      "lastCounterAt": 1657246399999,
+      "firstMetricAt": 1657246399522,
+      "lastMetricAt": 1657246399999,
+      "period": "1657246390000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "http.requests": 55,
+        "vusers.created_by_name.0": 25,
+        "vusers.created": 25,
+        "http.codes.200": 29,
+        "http.responses": 29,
+        "errors.ECONNRESET": 50,
+        "vusers.failed": 50
+      },
+      "rates": {
+        "http.request_rate": 10
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1657246400001,
+      "firstHistogramAt": 1657246402861,
+      "lastCounterAt": 1657246405517,
+      "lastHistogramAt": 1657246405408,
+      "firstMetricAt": 1657246400001,
+      "lastMetricAt": 1657246405517,
+      "period": "1657246400000",
+      "summaries": {
+        "http.response_time": {
+          "min": 3283,
+          "max": 5545,
+          "count": 29,
+          "p50": 4867,
+          "median": 4867,
+          "p75": 5272.4,
+          "p90": 5378.9,
+          "p95": 5487.5,
+          "p99": 5487.5,
+          "p999": 5487.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 3283,
+          "max": 5545,
+          "count": 29,
+          "p50": 4867,
+          "median": 4867,
+          "p75": 5272.4,
+          "p90": 5378.9,
+          "p95": 5487.5,
+          "p99": 5487.5,
+          "p999": 5487.5
+        }
+      }
+    }
+  ]
+}

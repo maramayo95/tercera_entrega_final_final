@@ -1,0 +1,4 @@
+GET : http://localhost:8080/api/carritos/finalizarCompra/62c6377390e965eae23f62e3/usuario/62c22811a1a844d7ee06743d
+
+
+artillery quick -o result.json --count 50 -n 20 http://localhost:8080/api/carritos/finalizarCompra/62c6377390e965eae23f62e3/usuario/62c22811a1a844d7ee06743d
