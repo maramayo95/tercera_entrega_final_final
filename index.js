@@ -3,7 +3,7 @@ const app = require('./app/app')
 require('dotenv').config()
 
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080
 const urlBase = process.env.DB
 
 if (process.env.AMBIENTE == 'mongo') mongoose.connect(urlBase)

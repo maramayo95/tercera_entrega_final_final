@@ -5,30 +5,32 @@ const sendWhatsapp = require('../utils/twilioWhatsapp')
 const sendSMS = require('../utils/twilioSms')
 const carritoModel = require('../models/carritos')
 const usersSchema = require('../models/usuarios')
+const carritoServices = require('../services/carritoServices')
+
 class CarritosController{
 
     async traerCarritos (req, res) {
-        const carritos = await carritoDAO.traerCarritos()
+        const carritos = carritoServices.traerCarritoServices()
         res.send(carritos)
     }
 
     async agregarCarrito(req, res){
-        const carritoGuardado = await carritoDAO.agregarCarrito()
+        const carritoGuardado = await carritoServices.traerCarritoServices
         res.status(201).send(carritoGuardado)
     }
 
     async agregarProductoACarrito(req, res){
-        const carrito = await carritoDAO.agregarProductoACarrito(req.params.id, req.params.idCarrito)
+        const carrito = await carritoServices.agregarProductoAlCarritoServices(req.params.id, req.params.idCarrito)
         res.send(carrito)
     }
 
     async eliminarProductoCarrito(req, res){
-        const carrito = await carritoDAO.eliminarProductoCarrito(req.params.idCarrito, req.params.id)
+        const carrito = await carritoServices.eliminarProductosCarritoServices(req.params.idCarrito, req.params.id)
         res.send(carrito)
     }
 
     async eliminarCarrito(req, res){
-        const eliminarCarrito = await carritoDAO.eliminarCarrito(req.params.id)
+        const eliminarCarrito = await carritoServices.eliminarCarritoServices(req.params.id)
         res.send(eliminarCarrito)
     }
 
