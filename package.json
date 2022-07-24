@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha mocha_chai_http.test.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,8 @@
     "artillery": "^2.0.0-20",
     "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.8",
     "express": "^4.17.3",
@@ -23,5 +25,8 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.7.7",
     "twilio": "^3.78.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
   }
 }

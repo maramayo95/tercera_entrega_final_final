@@ -33,7 +33,7 @@ const Test = require('./test/axiosTest')
 //         stock: 100
 //     } )
 // Test.getProduct("62ddac9659c73d19c5677204")
-Test.getProducts()
+// Test.getProducts()
 
 const PORT = process.env.PORT || 8080
 const urlBase = process.env.DB
