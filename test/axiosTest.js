@@ -8,9 +8,9 @@ class Test {
         try{
             const url = "http://localhost:8080/api/productos/"
             const response = await axios.get(url)
-            console.log(response.data)
+            console.log(response.data, response.status)
         } catch(error){
-            console.error(error)
+            console.error(error.status)
     
         }
     
@@ -22,7 +22,7 @@ class Test {
             const response = await axios.get(url)
             console.log(response.status, response.data)
         } catch(error){
-            console.error(error)
+            console.error(error.status)
         }
     
     }
@@ -30,31 +30,34 @@ class Test {
     async postProduct(dataObj){
         try {
             const  url = "http://localhost:8080/api/productos/"
-            axios.post(url, dataObj)
+            const res = await axios.post(url, dataObj)
+            console.log(res.status)
             console.log("Producto cargado correctamente")
         } catch (error) {
-            console.log(error)
+            console.log(error.status)
         }
     }
 
     async putProduct(id, dataObj){
         try {
             const url = `http://localhost:8080/api/productos/${id}`
-            axios.put(url, dataObj)
+            const res = await axios.put(url, dataObj)
+            console.log(res.status)
             console.log("Producto actualizado correctamente")
             
         } catch (error) {
-            console.log(error)
+            console.log(error.status)
         }
     }
     async deleteProduct(id){
         try {
             const url = `http://localhost:8080/api/productos/${id}`
-            axios.delete(url)
+            const res = await axios.delete(url)
+            console.log(res.status)
             console.log("Producto eliminado correctamente")
             
         } catch (error) {
-            console.log(error)
+            console.log(error.status)
         }
     }
 

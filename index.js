@@ -24,15 +24,16 @@ const Test = require('./test/axiosTest')
 // If you want to test if the product has been updated you can use Test.getProducts()
 // Test.getProducts()
 
-Test.putProduct("62ddac9659c73d19c5677204", {
-        name: "Camiseta de Boca",
-        description: "String",
-        code: 12312123,
-        image: "String",
-        price: 100,
-        stock: 100
-    } )
+// Test.putProduct("62ddac9659c73d19c5677204", {
+//         name: "Camiseta de Boca",
+//         description: "String",
+//         code: 12312123,
+//         image: "String",
+//         price: 100,
+//         stock: 100
+//     } )
 // Test.getProduct("62ddac9659c73d19c5677204")
+Test.getProducts()
 
 const PORT = process.env.PORT || 8080
 const urlBase = process.env.DB
