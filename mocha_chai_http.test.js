@@ -66,16 +66,16 @@ describe("Comprobando que funcionen correctamente los endpoints de productos", (
 
     // GET BY ID 
 
-    // it('Debe traer un producto de la base de datos', (done) => {
-    //     chai.request(url)
-    //         .get('/api/productos/62ddac9659c73d19c5677204')
-    //         .end(function (err, res) {
-    //             //console.log(res.body)
-    //             console.log(res.status)
-    //             expect(res).to.have.status(200);
-    //             done();
-    //         });
-    // });
+    it('Debe traer un producto de la base de datos', (done) => {
+        chai.request(url)
+            .get('/api/productos/62ddac9659c73d19c5677204')
+            .end(function (err, res) {
+                //console.log(res.body)
+                console.log(res.status)
+                expect(res).to.have.status(200);
+                done();
+            });
+    });
 
     // Testeando con el producto creado
     
