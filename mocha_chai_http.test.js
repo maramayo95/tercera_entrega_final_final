@@ -68,7 +68,7 @@ describe("Comprobando que funcionen correctamente los endpoints de productos", (
 
     it('Debe traer un producto de la base de datos', (done) => {
         chai.request(url)
-            .get('/api/productos/62ddac9659c73d19c5677204')
+            .get(`/api/productos/${id}`)
             .end(function (err, res) {
                 //console.log(res.body)
                 console.log(res.status)
