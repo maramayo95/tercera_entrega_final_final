@@ -1,9 +1,20 @@
 const mongoose = require('mongoose');
 const app = require('./app/app')
 require('dotenv').config()
-const Test = require('./test/axiosTest')
 
 
+
+// const Test = require('./test/axiosTest')
+
+// Middelware para poder ejecutar graph ql 
+
+// app.use(
+//     "/graphql",
+//     graphqlHTTP({
+//       graphiql: true,
+//       schema,
+//     })
+//   );
 
 
 
